@@ -10,9 +10,10 @@
 <body>
 <!-- Just an image -->
 <nav class="navbar navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="{% url 'movieapp:index' %}">
     Online Movie Store
   </a>
+   <a class="btn btn-primary" href="{% url 'movieapp:add_movie' %}" role="button"><b>Add Movies</b></a>
 </nav>
 {% block body %}
 {% endblock %}
